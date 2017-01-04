@@ -40,7 +40,8 @@ INSTALLED_APPS = (
     'django_extensions',
     'rest_framework',
     'cah',
-    'positions'
+    'positions',
+    'channels'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,4 +109,14 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
 
+}
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
+        },
+        "ROUTING": "cah.routing.channel_routing",
+    },
 }
