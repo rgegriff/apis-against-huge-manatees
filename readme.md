@@ -25,6 +25,3 @@ Not currently. This repo will eventually contain instructions for running a serv
 
 # Well, shit. Is there any way for me to just play with what exists now?
 If you REALLY want to try playing with things as they exist now, good luck! What documentation there is (not much) lives in the doc/ folder. The code as it exists now is in a working state. You can send API requests to it and play a game, however the API is still kind of a mess and the websocket event notification system hasn't been implemented yet. The test passes tho.
-
-# Is there any way I can talk to you?
-I don't know why you would want to, but sure. Hit me up on [the one social media thing I use](http://twitter.com/rgegriff).
