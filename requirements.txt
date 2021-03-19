@@ -11,7 +11,7 @@ dj-database-url==0.4.1
 Django==1.10.4
 django-extensions==1.7.5
 django-positions==0.5.4
-djangorestframework==3.5.3
+djangorestframework==3.11.2
 enum34==1.1.6
 incremental==16.10.1
 ipdb==0.10.1
